@@ -11,7 +11,7 @@ namespace DemoProject.ServiceFabric.PersonWebApi
         {
 			var container = new UnityContainer();
             config.DependencyResolver = new UnityDependencyResolver(container);
-            container.RegisterType<IDbContext, DbContext>();
+            container.RegisterType<IDbContext, PersonDbContext>();
         }
     }
 }

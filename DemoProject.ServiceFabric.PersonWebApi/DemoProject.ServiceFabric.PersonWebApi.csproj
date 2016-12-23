@@ -144,6 +144,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DemoProject.ServiceFabric.Common\DemoProject.ServiceFabric.Common.csproj">
+      <Project>{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}</Project>
+      <Name>DemoProject.ServiceFabric.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DemoProject.ServiceFabric.PersonDataBase\DemoProject.ServiceFabric.PersonDataBase.csproj">
       <Project>{5DD7A704-FB73-4408-A2A2-CA393113BB13}</Project>
       <Name>DemoProject.ServiceFabric.PersonDataBase</Name>

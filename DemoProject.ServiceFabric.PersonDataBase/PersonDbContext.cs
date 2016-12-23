@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Configuration;
 using DemoProject.ServiceFabric.Common;
-using DemoProject.ServiceFabric.PersonDataBase.POCO;
+using DemoProject.ServiceFabric.PersonDataBase.Models;
 using MongoDB.Bson;
 using MongoDB.Driver;
 

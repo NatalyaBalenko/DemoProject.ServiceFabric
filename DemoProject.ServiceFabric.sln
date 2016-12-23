@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject.ServiceFabric.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject.ServiceFabric.PersonDataBase", "DemoProject.ServiceFabric.PersonDataBase\DemoProject.ServiceFabric.PersonDataBase.csproj", "{5DD7A704-FB73-4408-A2A2-CA393113BB13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject.ServiceFabric.Common", "DemoProject.ServiceFabric.Common\DemoProject.ServiceFabric.Common.csproj", "{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,14 @@ Global
 		{5DD7A704-FB73-4408-A2A2-CA393113BB13}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5DD7A704-FB73-4408-A2A2-CA393113BB13}.Release|x64.ActiveCfg = Release|Any CPU
 		{5DD7A704-FB73-4408-A2A2-CA393113BB13}.Release|x64.Build.0 = Release|Any CPU
+		{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}.Debug|x64.Build.0 = Debug|Any CPU
+		{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}.Release|x64.ActiveCfg = Release|Any CPU
+		{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
