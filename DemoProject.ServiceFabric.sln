@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject.ServiceFabric.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject.ServiceFabric.Common", "DemoProject.ServiceFabric.Common\DemoProject.ServiceFabric.Common.csproj", "{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject.ServiceFabric.CourseWebApi", "DemoProject.ServiceFabric.CourseWebApi\DemoProject.ServiceFabric.CourseWebApi.csproj", "{9C5C1F51-792F-47B6-8BEA-C91459E31DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject.ServiceFabric.CourseDatabase", "DemoProject.ServiceFabric.CourseDatabase\DemoProject.ServiceFabric.CourseDatabase.csproj", "{EEE908E2-C837-458E-B639-7B8A80713968}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,20 @@ Global
 		{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}.Release|x64.ActiveCfg = Release|Any CPU
 		{3DCEE55E-CAA5-4FE6-975E-26C597A90ED1}.Release|x64.Build.0 = Release|Any CPU
+		{9C5C1F51-792F-47B6-8BEA-C91459E31DDD}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{9C5C1F51-792F-47B6-8BEA-C91459E31DDD}.Debug|x64.ActiveCfg = Debug|x64
+		{9C5C1F51-792F-47B6-8BEA-C91459E31DDD}.Debug|x64.Build.0 = Debug|x64
+		{9C5C1F51-792F-47B6-8BEA-C91459E31DDD}.Release|Any CPU.ActiveCfg = Release|x64
+		{9C5C1F51-792F-47B6-8BEA-C91459E31DDD}.Release|x64.ActiveCfg = Release|x64
+		{9C5C1F51-792F-47B6-8BEA-C91459E31DDD}.Release|x64.Build.0 = Release|x64
+		{EEE908E2-C837-458E-B639-7B8A80713968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE908E2-C837-458E-B639-7B8A80713968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE908E2-C837-458E-B639-7B8A80713968}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EEE908E2-C837-458E-B639-7B8A80713968}.Debug|x64.Build.0 = Debug|Any CPU
+		{EEE908E2-C837-458E-B639-7B8A80713968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE908E2-C837-458E-B639-7B8A80713968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE908E2-C837-458E-B639-7B8A80713968}.Release|x64.ActiveCfg = Release|Any CPU
+		{EEE908E2-C837-458E-B639-7B8A80713968}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

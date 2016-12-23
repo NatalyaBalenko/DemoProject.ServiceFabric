@@ -3,7 +3,7 @@ using DemoProject.ServiceFabric.PersonDataBase.Models;
 
 namespace DemoProject.ServiceFabric.PersonDataBase
 {
-    public interface IDbContext
+    public interface IPersonDbContext
     {
         Person GetPersonById(string personId);
         Person GetPersonByName(string personName);

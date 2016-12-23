@@ -8,12 +8,12 @@ namespace DemoProject.ServiceFabric.PersonWebApi.Controllers
     [ServiceRequestActionFilter]
     public class PersonsController : ApiController
     {
-        public PersonsController(IDbContext context)
+        public PersonsController(IPersonDbContext context)
         {
             Context = context;
         }
 
-        private IDbContext Context { get; set; }
+        private IPersonDbContext Context { get; set; }
 
         public IEnumerable<Person> Get()
         {

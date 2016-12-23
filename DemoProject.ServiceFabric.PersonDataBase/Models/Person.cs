@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
@@ -32,13 +31,5 @@ namespace DemoProject.ServiceFabric.PersonDataBase.Models
 
         public bool Sex { get; set; }
         public List<CourseLearning> CourseLearnings { get; set; }
-    }
-
-    public class CourseLearning
-    {
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public bool IsFinished => EndDate.HasValue;
-        public ObjectId CourseId { get; set; }
     }
 }

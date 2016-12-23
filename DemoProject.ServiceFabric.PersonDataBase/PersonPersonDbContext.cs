@@ -7,7 +7,7 @@ using MongoDB.Driver;
 
 namespace DemoProject.ServiceFabric.PersonDataBase
 {
-    public class PersonDbContext : BaseDbContext, IDbContext
+    public class PersonPersonDbContext : BaseDbContext, IPersonDbContext
     {
         private IMongoCollection<Person> Persons => Database.GetCollection<Person>("persons");
 
