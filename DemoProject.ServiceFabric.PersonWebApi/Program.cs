@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Fabric;
 using System.Threading;
-using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Services.Runtime;
 
 namespace DemoProject.ServiceFabric.PersonWebApi
@@ -10,7 +8,7 @@ namespace DemoProject.ServiceFabric.PersonWebApi
     internal static class Program
     {
         /// <summary>
-        /// This is the entry point of the service host process.
+        ///     This is the entry point of the service host process.
         /// </summary>
         private static void Main()
         {
@@ -24,7 +22,8 @@ namespace DemoProject.ServiceFabric.PersonWebApi
                 ServiceRuntime.RegisterServiceAsync("PersonWebApiType",
                     context => new PersonWebApi(context)).GetAwaiter().GetResult();
 
-                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(PersonWebApi).Name);
+                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id,
+                    typeof(PersonWebApi).Name);
 
                 // Prevents this host process from terminating so services keeps running. 
                 Thread.Sleep(Timeout.Infinite);

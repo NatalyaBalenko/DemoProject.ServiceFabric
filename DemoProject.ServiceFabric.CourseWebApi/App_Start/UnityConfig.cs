@@ -1,6 +1,7 @@
 using DemoProject.ServiceFabric.CourseDatabase.Models;
 using Microsoft.Practices.Unity;
 using System.Web.Http;
+using DemoProject.ServiceFabric.Common.Data;
 using DemoProject.ServiceFabric.CourseDatabase;
 using Unity.WebApi;
 
@@ -12,7 +13,7 @@ namespace DemoProject.ServiceFabric.CourseWebApi
         {
             var container = new UnityContainer();
             config.DependencyResolver = new UnityDependencyResolver(container);
-            container.RegisterType<ICourseRepository, CourseRepository>();
+            container.RegisterType(typeof(IRepository<>), typeof(MongoDbRepository<>));
         }
     }
 }

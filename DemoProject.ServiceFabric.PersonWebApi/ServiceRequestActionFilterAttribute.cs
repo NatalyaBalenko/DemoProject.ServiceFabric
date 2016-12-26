@@ -4,7 +4,7 @@ using System.Web.Http.Filters;
 
 namespace DemoProject.ServiceFabric.PersonWebApi
 {
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = false)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     internal sealed class ServiceRequestActionFilterAttribute : ActionFilterAttribute
     {
         public override void OnActionExecuting(HttpActionContext actionContext)
@@ -14,7 +14,8 @@ namespace DemoProject.ServiceFabric.PersonWebApi
 
         public override void OnActionExecuted(HttpActionExecutedContext actionExecutedContext)
         {
-            ServiceEventSource.Current.ServiceRequestStop(actionExecutedContext.ActionContext.ActionDescriptor.ActionName,
+            ServiceEventSource.Current.ServiceRequestStop(
+                actionExecutedContext.ActionContext.ActionDescriptor.ActionName,
                 actionExecutedContext.Exception?.ToString() ?? string.Empty);
         }
     }

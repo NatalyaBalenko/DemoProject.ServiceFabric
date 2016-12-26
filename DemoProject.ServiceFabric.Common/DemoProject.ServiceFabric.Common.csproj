@@ -69,7 +69,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseDbContext.cs" />
+    <Compile Include="BaseApiController.cs" />
+    <Compile Include="Data\EntityBase.cs" />
+    <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Data\MongoDbRepository.cs" />
     <Compile Include="Filters\ValidateModelAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -47,8 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\CourseLearning.cs" />
-    <Compile Include="PersonPersonDbContext.cs" />
-    <Compile Include="IPersonDbContext.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

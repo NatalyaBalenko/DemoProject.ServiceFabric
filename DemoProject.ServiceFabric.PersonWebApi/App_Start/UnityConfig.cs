@@ -1,3 +1,4 @@
+using DemoProject.ServiceFabric.Common.Data;
 using DemoProject.ServiceFabric.PersonDataBase;
 using Microsoft.Practices.Unity;
 using System.Web.Http;
@@ -11,7 +12,7 @@ namespace DemoProject.ServiceFabric.PersonWebApi
         {
 			var container = new UnityContainer();
             config.DependencyResolver = new UnityDependencyResolver(container);
-            container.RegisterType<IPersonDbContext, PersonPersonDbContext>();
+            container.RegisterType(typeof(IRepository<>), typeof(MongoDbRepository<>));
         }
     }
 }

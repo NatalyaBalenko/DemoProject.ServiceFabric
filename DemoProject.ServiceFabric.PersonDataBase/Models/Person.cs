@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
+using DemoProject.ServiceFabric.Common.Data;
 
 namespace DemoProject.ServiceFabric.PersonDataBase.Models
 {
-    public class Person
+    public class Person : EntityBase
     {
         public Person()
         {
@@ -12,15 +11,12 @@ namespace DemoProject.ServiceFabric.PersonDataBase.Models
 
         public Person(string name, int age)
         {
-            Id = ObjectId.GenerateNewId();
             Name = name;
             Age = age;
             Skills = new List<string>();
             CourseLearnings = new List<CourseLearning>();
         }
 
-        [BsonId]
-        public ObjectId Id { get; set; }
 
         public string Name { get; set; }
         public int Age { get; set; }

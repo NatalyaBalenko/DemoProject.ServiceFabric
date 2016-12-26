@@ -1,10 +1,10 @@
-﻿using Microsoft.Build.Framework;
-using MongoDB.Bson;
+﻿using DemoProject.ServiceFabric.Common.Data;
+using Microsoft.Build.Framework;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace DemoProject.ServiceFabric.CourseDatabase.Models
 {
-    public class Course
+    public class Course : EntityBase
     {
         public Course()
         {
@@ -15,10 +15,6 @@ namespace DemoProject.ServiceFabric.CourseDatabase.Models
             Name = name;
             Skill = skill ?? name;
         }
-
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
 
         [Required]
         [BsonRequired]
