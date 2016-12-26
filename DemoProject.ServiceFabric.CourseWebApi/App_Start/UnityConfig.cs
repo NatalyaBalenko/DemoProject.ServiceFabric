@@ -12,7 +12,7 @@ namespace DemoProject.ServiceFabric.CourseWebApi
         {
             var container = new UnityContainer();
             config.DependencyResolver = new UnityDependencyResolver(container);
-            container.RegisterType<ICourseDbContext, CourseDbContext>();
+            container.RegisterType<ICourseRepository, CourseRepository>();
         }
     }
 }

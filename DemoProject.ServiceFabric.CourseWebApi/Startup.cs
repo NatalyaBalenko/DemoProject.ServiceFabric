@@ -1,4 +1,5 @@
 ﻿using System.Web.Http;
+using DemoProject.ServiceFabric.Common.Filters;
 using Owin;
 
 namespace DemoProject.ServiceFabric.CourseWebApi
@@ -17,7 +18,7 @@ namespace DemoProject.ServiceFabric.CourseWebApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-
+            config.Filters.Add(new ValidateModelAttribute());
             appBuilder.UseWebApi(config);
         }
     }
