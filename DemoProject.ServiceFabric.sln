@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject.ServiceFabric.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject.ServiceFabric.CourseDatabase", "DemoProject.ServiceFabric.CourseDatabase\DemoProject.ServiceFabric.CourseDatabase.csproj", "{EEE908E2-C837-458E-B639-7B8A80713968}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6100F7D7-58D3-49C3-AFDE-6AD68DD5ACA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject.ServiceFabric.CourseWebApiTests", "DemoProject.ServiceFabric.CourseWebApiTests\DemoProject.ServiceFabric.CourseWebApiTests.csproj", "{9CE9C40B-03A8-41B1-B335-D5EF533CC843}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,8 +71,19 @@ Global
 		{EEE908E2-C837-458E-B639-7B8A80713968}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EEE908E2-C837-458E-B639-7B8A80713968}.Release|x64.ActiveCfg = Release|Any CPU
 		{EEE908E2-C837-458E-B639-7B8A80713968}.Release|x64.Build.0 = Release|Any CPU
+		{9CE9C40B-03A8-41B1-B335-D5EF533CC843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE9C40B-03A8-41B1-B335-D5EF533CC843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE9C40B-03A8-41B1-B335-D5EF533CC843}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9CE9C40B-03A8-41B1-B335-D5EF533CC843}.Debug|x64.Build.0 = Debug|Any CPU
+		{9CE9C40B-03A8-41B1-B335-D5EF533CC843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE9C40B-03A8-41B1-B335-D5EF533CC843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE9C40B-03A8-41B1-B335-D5EF533CC843}.Release|x64.ActiveCfg = Release|Any CPU
+		{9CE9C40B-03A8-41B1-B335-D5EF533CC843}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9CE9C40B-03A8-41B1-B335-D5EF533CC843} = {6100F7D7-58D3-49C3-AFDE-6AD68DD5ACA9}
 	EndGlobalSection
 EndGlobal
