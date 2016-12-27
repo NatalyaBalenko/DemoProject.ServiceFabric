@@ -34,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -97,7 +98,7 @@
       <Name>DemoProject.ServiceFabric.CourseDatabase</Name>
     </ProjectReference>
     <ProjectReference Include="..\DemoProject.ServiceFabric.CourseWebApi\DemoProject.ServiceFabric.CourseWebApi.csproj">
-      <Project>{9c5c1f51-792f-47b6-8bea-c91459e31ddd}</Project>
+      <Project>{9C5C1F51-792F-47B6-8BEA-C91459E31DDD}</Project>
       <Name>DemoProject.ServiceFabric.CourseWebApi</Name>
     </ProjectReference>
   </ItemGroup>
