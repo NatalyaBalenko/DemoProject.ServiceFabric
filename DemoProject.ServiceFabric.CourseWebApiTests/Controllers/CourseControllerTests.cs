@@ -11,7 +11,7 @@ namespace DemoProject.ServiceFabric.CourseWebApiTests.Controllers
     public class CourseControllerTests
     {
         private readonly string _courseTestName = "TestCouse" + DateTime.Now;
-        private readonly string _courseSkill = "C#";
+        private readonly string _courseSkill = "SQL";
 
         private IRepository<Course> Repository { get; }
         private CoursesController CourseController { get; }
