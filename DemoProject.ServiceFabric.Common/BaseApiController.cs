@@ -18,12 +18,14 @@ namespace DemoProject.ServiceFabric.Common
 
 
         // GET api/controller
+        [ExceptionHandling]
         public IEnumerable<TEntity> Get()
         {
             return Context.GetAll();
         }
 
         // GET api/controller/5860d9093d878a0b6c7cfe53
+        [ExceptionHandling]
         public TEntity Get(string id)
         {
             return Context.GetById(id);
@@ -31,6 +33,7 @@ namespace DemoProject.ServiceFabric.Common
 
         // POST api/controller
         [ValidateModel]
+        [ExceptionHandling]
         public HttpResponseMessage Post([FromBody] TEntity course)
         {
             Context.Insert(course);
@@ -39,6 +42,7 @@ namespace DemoProject.ServiceFabric.Common
 
         // PUT api/controller/5860d9093d878a0b6c7cfe53
         [ValidateModel]
+        [ExceptionHandling]
         public HttpResponseMessage Put([FromBody] TEntity course)
         {
             Context.Update(course);
@@ -46,6 +50,7 @@ namespace DemoProject.ServiceFabric.Common
         }
 
         // DELETE api/controller/5860d9093d878a0b6c7cfe53
+        [ExceptionHandling]
         public HttpResponseMessage Delete(string id)
         {
             Context.Delete(id);
